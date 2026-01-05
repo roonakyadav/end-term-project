@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Smart Academic Life OS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ===== HEADER ===== -->
+<header class="app-header">
+    <div class="header-content">
+        <h1>Smart Academic Life OS</h1>
+        <div class="header-line"></div>
+        <p>Plan • Track • Improve</p>
+    </div>
+</header>
+
+<main>
+
+    <!-- DASHBOARD -->
+    <section class="card">
+        <h2>Dashboard</h2>
+        <div class="dashboard">
+            <div class="dash-box">
+                <span id="taskStats">0/0</span>
+                <small>Tasks Completed</small>
+            </div>
+            <div class="dash-box">
+                <span id="habitStats">0/0</span>
+                <small>Habits Today</small>
+            </div>
+            <div class="dash-box">
+                <span id="productivity">0%</span>
+                <small>Productivity</small>
+            </div>
+        </div>
+    </section>
+
+    <!-- TASK MANAGER -->
+    <section class="card">
+        <h2>Task Manager</h2>
+        <div class="form-row">
+            <input type="text" id="taskTitle" placeholder="Task title">
+            <select id="taskPriority">
+                <option value="low">Low</option>
+                <option value="medium">Medium</option>
+                <option value="high">High</option>
+            </select>
+            <input type="date" id="taskDate">
+            <button id="addTaskBtn">Add</button>
+        </div>
+        <ul id="taskList"></ul>
+    </section>
+
+    <!-- HABIT TRACKER -->
+    <section class="card">
+        <h2>Habit Tracker</h2>
+        <div class="form-row">
+            <input type="text" id="habitName" placeholder="Habit name">
+            <button id="addHabitBtn">Add</button>
+        </div>
+        <ul id="habitList"></ul>
+    </section>
+
+    <!-- GOALS -->
+    <section class="card">
+        <h2>Goals</h2>
+        <div class="form-row">
+            <input type="text" id="goalName" placeholder="Goal name">
+            <button id="addGoalBtn">Add</button>
+        </div>
+        <div id="goalList"></div>
+    </section>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>

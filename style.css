@@ -1,0 +1,174 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    margin: 0;
+    background: #f4f6f8;
+    color: #1f2933;
+}
+
+/* ===== HEADER ===== */
+.app-header {
+    background: linear-gradient(135deg, #0f172a, #1e293b);
+    padding: 40px 15px;
+    text-align: center;
+}
+
+.header-content {
+    max-width: 900px;
+    margin: auto;
+}
+
+.app-header h1 {
+    margin: 0;
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: white;
+}
+
+.header-line {
+    width: 60px;
+    height: 4px;
+    background: #3b82f6;
+    margin: 12px auto;
+    border-radius: 999px;
+}
+
+.app-header p {
+    margin: 0;
+    font-size: 14px;
+    letter-spacing: 2px;
+    color: #cbd5f5;
+}
+
+/* ===== MAIN ===== */
+main {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 10px;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 14px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+h2 {
+    margin-top: 0;
+}
+
+/* ===== DASHBOARD ===== */
+.dashboard {
+    display: flex;
+    gap: 20px;
+}
+
+.dash-box {
+    background: #f1f5f9;
+    padding: 15px;
+    border-radius: 12px;
+    text-align: center;
+    flex: 1;
+}
+
+.dash-box span {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+/* ===== FORMS ===== */
+.form-row {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+input, select {
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #cbd5e1;
+    flex: 1;
+}
+
+button {
+    padding: 10px 18px;
+    border-radius: 999px;
+    border: none;
+    background: #2563eb;
+    color: white;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+button:hover {
+    background: #1e40af;
+    transform: translateY(-1px);
+}
+
+/* ===== TASKS ===== */
+.task {
+    padding: 12px;
+    margin-bottom: 8px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-left: 6px solid gray;
+    transition: background 0.2s ease;
+}
+
+.task:hover {
+    background: #f8fafc;
+}
+
+.task.low { border-color: #16a34a; }
+.task.medium { border-color: #f59e0b; }
+.task.high { border-color: #dc2626; }
+
+.task.done {
+    text-decoration: line-through;
+    opacity: 0.6;
+}
+
+/* ===== HABITS ===== */
+.habit {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 8px;
+    background: #f1f5f9;
+    transition: background 0.2s ease;
+}
+
+.habit:hover {
+    background: #e2e8f0;
+}
+
+/* ===== GOALS ===== */
+.goal {
+    padding: 12px;
+    border-radius: 12px;
+    border: 1px solid #cbd5e1;
+    margin-bottom: 12px;
+}
+
+.progress-bar {
+    height: 8px;
+    background: #e5e7eb;
+    border-radius: 999px;
+    overflow: hidden;
+    margin: 8px 0;
+}
+
+.progress {
+    height: 100%;
+    background: #16a34a;
+    width: 0%;
+}
